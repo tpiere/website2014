@@ -139,7 +139,7 @@ module.exports = function (grunt) {
         },
         less: {
             options: {
-                paths: ['<%= yeoman.app %>/bower_components'],
+                paths: ['<%= yeoman.app %>/bower_components']
             },
             dist: {
                 options: {
@@ -214,7 +214,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>/images',
-                    src: '{,*/}*.{gif,jpeg,jpg,png}',
+                    src: '{,*/}*.{gif,png}',
                     dest: '<%= yeoman.dist %>/images'
                 }]
             }
@@ -284,6 +284,7 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt,docx}',
                         '.htaccess',
                         'images/{,*/}*.webp',
+                        'images/{,*/}*.{png,gif,jpg,jpeg}',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*'
                     ]
@@ -338,7 +339,7 @@ module.exports = function (grunt) {
             dist: [
                 'less:dist',
                 'copy:styles',
-                'imagemin',
+
                 'svgmin'
             ]
         },
@@ -395,7 +396,7 @@ module.exports = function (grunt) {
             grunt.task.run([
                 'clean:server',
                 'concurrent:test',
-                'autoprefixer',
+                'autoprefixer'
             ]);
         }
 
