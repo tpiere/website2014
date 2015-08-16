@@ -1,10 +1,26 @@
 {
-  "name": "jade",
+  "name": "tompiere-home",
   "version": "0.0.0",
   "dependencies": {
-    "bootstrap": "~3.0.3",
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2"
   },
-  "devDependencies": {}
+  "homepage": "https://github.com/tpiere/website2014",
+  "authors": [
+    "tpiere1 <tpiere@gmail.com>"
+  ],
+  "description": "home site",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
 }
